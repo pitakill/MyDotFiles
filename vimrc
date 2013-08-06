@@ -1,5 +1,4 @@
 " git://github.com/haridas/Dotfiles.git
-" Testing
 
 set nocompatible               " be iMproved
 filetype off                   " required!
