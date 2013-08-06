@@ -1,3 +1,7 @@
+" This use:
+" https://github.com/gmarik/vundle
+" https://github.com/othree/html5.vim
+
 set nocompatible               " be iMproved
 filetype off                   " required!
 
