@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 " This use:
 " https://github.com/gmarik/vundle
 " https://github.com/othree/html5.vim
+=======
+" git://github.com/haridas/Dotfiles.git
+>>>>>>> 50b6e63079bf0c2ab9426893ef1119a4e4d8f679
 
 set nocompatible               " be iMproved
 filetype off                   " required!
