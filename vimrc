@@ -10,7 +10,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
@@ -41,11 +41,12 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle command are not allowed..
 
 syntax on
+set incsearch
 set number
 set enc=utf8
 set fenc=utf8
-set ts=3
-set shiftwidth=3
+set ts=2
+set shiftwidth=2
 set lcs=tab:\|\ ,trail:█
 set list
 set ruler
@@ -68,3 +69,6 @@ let g:html5_event_handler_attributes_complete = 0
 let g:html5_rdfa_attributes_complete = 0
 let g:html5_microdata_attributes_complete = 0
 let g:html5_aria_attributes_complete = 0
+
+" sudo write
+ca w!! w !sudo tee >/dev/null "%"
