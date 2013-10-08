@@ -1,6 +1,6 @@
 " MacVim GUI mode
 if has("gui_macvim")
-  set guifont=Monaco:h13
+  set guifont=Source Code Pro:h13
   set guioptions=aAce
   set fuoptions=maxvert,maxhorz
   set noballooneval
@@ -20,3 +20,6 @@ if has("gui_macvim")
   " when resizing MacVim window
   autocmd VimResized * wincmd =
 endif
+
+" NERDTree shows on open
+autocmd VimEnter * NERDTree

@@ -117,4 +117,5 @@ ca w!! w !sudo tee >/dev/null "%"
 " NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1
-let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
+let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg', '.*.swp']
+let NERDTreeShowHidden=1
