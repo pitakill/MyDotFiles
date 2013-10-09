@@ -23,3 +23,4 @@ endif
 
 " NERDTree shows on open
 autocmd VimEnter * NERDTree
+color jellybeans
