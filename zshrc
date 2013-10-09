@@ -47,5 +47,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 # Servidor remoto con Gentoo_Recreo: export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/opt/bin:/usr/i686-pc-linux-gnu/gcc-bin/4.5.3
+# Descomentar para que funcione mosh en Mac OS X: export LC_ALL="en_US.UTF-8"
 bindkey -e
 alias l="ls -l"
