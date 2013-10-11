@@ -20,6 +20,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-git'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
@@ -83,7 +84,7 @@ set lcs=tab:\|\ ,trail:█
 set list
 set ruler
 set showcmd
-set paste
+"set paste
 highlight Whitespace cterm=underline gui=underline ctermbg=NONE guibg=NONE ctermfg=blue guifg=blue
 autocmd ColorScheme * highlight Whitespace gui=underline ctermbg=NONE guibg=NONE ctermfg=blue guifg=blue
 match Whitespace /  \+/
