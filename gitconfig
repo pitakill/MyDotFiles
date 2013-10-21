@@ -1,0 +1,5 @@
+[user]
+	name = Lepoldo Caballero
+	email = git@pitakill.net
+[core]
+	excludesfile = /Users/pitakill/.gitignore_global
