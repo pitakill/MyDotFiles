@@ -51,5 +51,7 @@ source $ZSH/oh-my-zsh.sh
 #export LC_ALL="en_US.UTF-8"
 bindkey -e
 alias l="ls -l"
+
+#Alias de develop
 alias jadepn="jade -w -o ~/Proyectos/parquenorte/web ~/Proyectos/parquenorte/views/index.jade"
 alias styluspn="stylus -w -o ~/Proyectos/parquenorte/web/css ~/Proyectos/parquenorte/styles/main.styl"
