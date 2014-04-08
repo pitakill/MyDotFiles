@@ -80,8 +80,8 @@ set number
 set enc=utf8
 set fenc=utf8
 set expandtab
-set ts=4
-set shiftwidth=4
+set ts=2
+set shiftwidth=2
 set lcs=tab:\|\ ,trail:█
 set list
 set ruler
