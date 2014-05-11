@@ -41,7 +41,7 @@ ZSH_THEME="steeef"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colorize cp django cpanm git go golang heroku history node npm perl pip python ruby screen themes torrent vi-mode tmux brew)
+plugins=(colorize cp django cpanm git go golang heroku history node npm perl pip python ruby screen themes torrent vi-mode brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -55,3 +55,4 @@ alias l="ls -l"
 #Alias de develop
 alias jadepn="jade -w -o ~/Proyectos/parquenorte/web ~/Proyectos/parquenorte/views/index.jade"
 alias styluspn="stylus -w -o ~/Proyectos/parquenorte/web/css ~/Proyectos/parquenorte/styles/main.styl"
+alias screen="screen -U"
