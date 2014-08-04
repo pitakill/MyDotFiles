@@ -33,6 +33,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'slim-template/vim-slim'
 Bundle 'othree/html5.vim'
+Bundle 'kchmck/vim-coffee-script'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
