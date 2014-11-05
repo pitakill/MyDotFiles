@@ -21,6 +21,7 @@ Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-git'
+Bundle 'elzr/vim-json'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'Lokaltog/vim-powerline'
@@ -32,6 +33,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'slim-template/vim-slim'
 Bundle 'othree/html5.vim'
+Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'kchmck/vim-coffee-script'
 " vim-scripts repos
 Bundle 'L9'
@@ -74,7 +76,7 @@ filetype plugin indent on     " required!
 "set smartcase
 
 let mapleader=","
-color jellybeans
+color darkblue
 syntax on
 set incsearch
 set number
@@ -87,7 +89,7 @@ set lcs=tab:\|\ ,trail:█
 set list
 set ruler
 set showcmd
-set paste
+"set paste
 highlight Whitespace cterm=underline gui=underline ctermbg=NONE guibg=NONE ctermfg=blue guifg=blue
 autocmd ColorScheme * highlight Whitespace gui=underline ctermbg=NONE guibg=NONE ctermfg=blue guifg=blue
 match Whitespace /  \+/
@@ -123,3 +125,9 @@ nmap <leader>n :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg', '.*.swp', '.DS_Store']
 let NERDTreeShowHidden=1
+
+"folding settings
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=0         "this is just what i use
