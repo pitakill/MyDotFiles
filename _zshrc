@@ -41,7 +41,10 @@ ZSH_THEME="steeef"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colorize cp git go golang history node npm screen themes torrent vi-mode brew)
+# Plugins for Mac OS X
+#plugins=(colorize cp git go golang history node npm screen themes torrent vi-mode brew)
+# Plugins for Linux
+#plugins=(colorize cp git go golang history node npm screen themes torrent vi-mode sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -50,7 +53,15 @@ source $ZSH/oh-my-zsh.sh
 # Descomentar para que funcione mosh en Mac OS X:
 #export LC_ALL="en_US.UTF-8"
 bindkey -e
-alias l="ls -l"
 
-#Alias de develop
+#Aliases
+alias l="ls -l"
 alias screen="screen -U"
+
+# Alias for Linux
+#alias stwlan0="sudo iftop -c ~/.iftoprc"
+
+#Exports for Linux
+#export JAVA_HOME="/usr/lib/jvm/icedtea-7"
+#export PATH="$PATH:/home/pitakill/Android/Sdk/platform-tools"
+#export TERMINAL="xfce4-terminal"
