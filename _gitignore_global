@@ -40,3 +40,7 @@ Thumbs.db
 # node.js #
 ###########
 node_modules
+
+# bower #
+#########
+bower_components

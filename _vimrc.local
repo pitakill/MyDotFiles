@@ -1,0 +1,6 @@
+set shiftwidth=2                " Use indents of 2 spaces
+set tabstop=2                   " An indentation every four columns
+set softtabstop=2               " Let backspace delete indent
+set foldmethod=indent           " Let fold in the right way
+set foldlevel=5
+let g:bufferline_echo=0
