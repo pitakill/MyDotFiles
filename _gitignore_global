@@ -40,7 +40,10 @@ Thumbs.db
 # node.js #
 ###########
 node_modules
+<<<<<<< HEAD:_gitignore_global
 
 # bower #
 #########
+=======
+>>>>>>> a710e6ba0767ed734324e86936132d8b2a5245ca:gitignore_global
 bower_components
