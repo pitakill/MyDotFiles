@@ -2,4 +2,4 @@
 	name = Lepoldo Caballero
 	email = git@pitakill.net
 [core]
-	excludesfile = /home/pitakill/.gitignore_global
+	excludesfile = /Users/pitakill/.gitignore_global
