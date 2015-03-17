@@ -1,2 +1,3 @@
 Bundle 'digitaltoad/vim-jade'
 Bundle 'wavded/vim-stylus'
+Bundle 'fatih/vim-go'

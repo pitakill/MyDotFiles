@@ -60,6 +60,7 @@ alias l="ls -l"
 alias screen="screen -U"
 
 # Alias for Linux
+alias cdp="cd $HOME/._proyectos/"
 alias stwlan0="sudo iftop -c ~/.iftoprc_wlan0"
 alias steth0="sudo iftop -c ~/.iftoprc_eth0"
 
@@ -67,6 +68,12 @@ alias steth0="sudo iftop -c ~/.iftoprc_eth0"
 export JAVA_HOME="/usr/lib/jvm/icedtea-7"
 export PATH="$PATH:/home/pitakill/Android/Sdk/platform-tools"
 export TERMINAL="xfce4-terminal"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 
 #The fucking beep is gone with this shit.
 sh $HOME/.bin/beep.sh
+
+#Quick change to the projects in progress
+cdprojects(){cd ~/._proyectos/$1;}
+compctl -W ~/._proyectos -/ cdprojects
