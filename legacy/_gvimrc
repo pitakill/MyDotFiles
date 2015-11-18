@@ -19,6 +19,10 @@ if has("gui_macvim")
   " Automatically resize splits
   " when resizing MacVim window
   autocmd VimResized * wincmd =
+else
+  set guifont=Source\ Code\ Pro\ 9
+  set guioptions-=r
+  set guioptions-=L
 endif
 
 " NERDTree shows on open
