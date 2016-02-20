@@ -1,4 +1,5 @@
 " MacVim GUI mode
+
 if has("gui_macvim")
   set guifont=Source\ Code\ Pro:h13
   set guioptions=aAce
@@ -22,5 +23,10 @@ if has("gui_macvim")
 endif
 
 " NERDTree shows on open
+
+set guifont=Source\ Code\ Pro\ 10
 autocmd VimEnter * NERDTree
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+set guioptions-=m  "remove toolbar
 color jellybeans

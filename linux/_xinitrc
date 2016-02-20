@@ -1,3 +1,4 @@
+xrandr --dpi 80
 exec i3
 xmodmap -e "pointer = 1 2 3 5 4"
 synclient TapButton2=3
