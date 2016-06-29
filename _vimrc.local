@@ -4,3 +4,5 @@ set softtabstop=2               " Let backspace delete indent
 set foldmethod=indent           " Let fold in the right way
 set foldlevel=5
 let g:bufferline_echo=0
+let g:jsx_ext_required=0
+let g:sytastic_javascript_checkers=['eslint']
