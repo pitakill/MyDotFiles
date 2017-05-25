@@ -1,7 +1,0 @@
-[user]
-	name = Lepoldo Caballero
-	email = git@pitakill.net
-[core]
-	excludesfile = /Users/pitakill/.gitignore_global
-[alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
