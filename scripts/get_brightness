@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+ACTUAL=`grep '^[0-9].' /sys/class/backlight/intel_backlight/brightness`
+MAX=`grep '^[0-9].' /sys/class/backlight/intel_backlight/max_brightness`
+PERCENTAGE=`echo "$ACTUAL*100/$MAX" | bc`
+
+echo $PERCENTAGE%
