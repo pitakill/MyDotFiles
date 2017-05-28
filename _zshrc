@@ -11,8 +11,17 @@ source $ZSH/oh-my-zsh.sh
 #export LC_ALL="en_US.UTF-8"
 
 # Exports
-export PATH="$PATH:$GOPATH/bin"
+# Go
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
+# Laptop Brightness keyboard and LCD
+export PATH="$HOME/.bin:$PATH"
+# i3 scripts
+export PATH="$HOME/.i3/scripts:$PATH"
 
 # Helpers
 cdprojects(){cd ~/Projects/$1;}
 compctl -W ~/Projects -/ cdprojects
+
+# Alias
+alias project-screen="screen -c $HOME/.screenrc-projects"

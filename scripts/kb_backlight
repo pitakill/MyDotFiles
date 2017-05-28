@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+IS_ON=`cat /sys/devices/platform/sony-laptop/kbd_backlight`
+
+if [ $IS_ON -le 0 ]; then
+  sudo sh -c "echo 1 > /sys/devices/platform/sony-laptop/kbd_backlight"
+else
+  sudo sh -c "echo 0 > /sys/devices/platform/sony-laptop/kbd_backlight"
+fi
