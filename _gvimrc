@@ -21,16 +21,11 @@ if has("gui_macvim")
   " when resizing MacVim window
   autocmd VimResized * wincmd =
 else
-  set guifont=Source\ Code\ Pro\ 9
-  set guioptions-=r
-  set guioptions-=L
+  set guifont=Go\ Mono\ 10
+  autocmd VimEnter * NERDTree
+  set guioptions-=r  "remove right-hand scroll bar
+  set guioptions-=L  "remove left-hand scroll bar
+  set guioptions-=m  "remove toolbar
 endif
 
-" NERDTree shows on open
-
-set guifont=Source\ Code\ Pro\ 10
-autocmd VimEnter * NERDTree
-set guioptions-=r  "remove right-hand scroll bar
-set guioptions-=L  "remove left-hand scroll bar
-set guioptions-=m  "remove toolbar
-color jellybeans
+color nova

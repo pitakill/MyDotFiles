@@ -1,4 +1,10 @@
-Bundle 'digitaltoad/vim-jade'
+Bundle 'digitaltoad/vim-pug'
 Bundle 'wavded/vim-stylus'
 Bundle 'fatih/vim-go'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'will133/vim-dirdiff'
+Bundle 'mxw/vim-jsx'
+Bundle 'flowtype/vim-flow'
+
+Bundle 'myusuf3/numbers.vim'
+Bundle 'trevordmiller/nova-vim'

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ -f $HOME/.touchpad ]; then
+  xinput enable 14
+  rm $HOME/.touchpad
+else
+  xinput disable 14
+  touch $HOME/.touchpad
+fi

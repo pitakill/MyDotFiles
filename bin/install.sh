@@ -39,9 +39,13 @@ mkdir -p $HOME/.bin
 rm -f $HOME/.bin/get_brightness
 rm -f $HOME/.bin/set_brightness
 rm -f $HOME/.bin/kb_backlight
+rm -f $HOME/.bin/touchpad
+rm -f $HOME/.bin/synaptic_setup
 ln -s $HOME/Projects/personal/MyDotFiles/scripts/set_brightness $HOME/.bin/set_brightness
 ln -s $HOME/Projects/personal/MyDotFiles/scripts/kb_backlight $HOME/.bin/kb_backlight
 ln -s $HOME/Projects/personal/MyDotFiles/scripts/get_brightness $HOME/.bin/get_brightness
+ln -s $HOME/Projects/personal/MyDotFiles/scripts/touchpad $HOME/.bin/touchpad
+ln -s $HOME/Projects/personal/MyDotFiles/scripts/synaptic_setup $HOME/.bin/synaptic_setup
 
 echo "Linking Xmodmap file"
 

@@ -4,4 +4,16 @@ set softtabstop=2               " Let backspace delete indent
 set foldmethod=indent           " Let fold in the right way
 set foldlevel=5
 let g:bufferline_echo=0
-color jellybeans
+set textwidth=80
+let &colorcolumn=join(range(81,999),",")
+
+" JS
+let g:flow#autoclose=1
+let g:javascript_plugin_flow=1
+let g:jsx_ext_required=0
+let g:sytastic_javascript_checkers=['eslint', 'flow']
+let g:syntastic_javascript_flow_exe='flow check-contents'
+let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
+
+" Golang
+let g:go_fmt_command = "goimports"
