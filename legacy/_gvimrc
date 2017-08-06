@@ -28,9 +28,10 @@ endif
 
 " NERDTree shows on open
 
-set guifont=Source\ Code\ Pro\ 10
+"set guifont=Source\ Code\ Pro\ 11
+set guifont=Go\ Mono\ 11
 autocmd VimEnter * NERDTree
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 set guioptions-=m  "remove toolbar
-color jellybeans
+color nova

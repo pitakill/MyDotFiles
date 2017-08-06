@@ -1,4 +1,14 @@
-Bundle 'digitaltoad/vim-jade'
+Bundle 'digitaltoad/vim-pug'
 Bundle 'wavded/vim-stylus'
 Bundle 'fatih/vim-go'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'mxw/vim-jsx'
+Bundle "myusuf3/numbers.vim"
+Bundle 'trevordmiller/nova-vim'
+
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'tpope/vim-git'
+Plugin 'flowtype/vim-flow'
