@@ -5,10 +5,12 @@ set foldmethod=indent           " Let fold in the right way
 set foldlevel=5
 let g:bufferline_echo=0
 set autoread
+color nova
 
 " Buffers
 map <C-right> <ESC>:bn<CR>
 map <C-left> <ESC>:bp<CR>
+let g:move_key_modifier = 'C'
 
 " Text width
 set textwidth=80
@@ -21,6 +23,29 @@ let g:jsx_ext_required=0
 let g:sytastic_javascript_checkers=['eslint']
 let g:typescript_compiler_binary = 'tsc'
 let g:typescript_compiler_options = ''
+"Use locally installed flow
+let local_flow = finddir('node_modules', '.;') . '/.bin/flow'
+if matchstr(local_flow, "^\/\\w") == ''
+    let local_flow= getcwd() . "/" . local_flow
+endif
+if executable(local_flow)
+  let g:flow#flowpath = local_flow
+endif
 
 " Golang
 let g:go_fmt_command = "goimports"
+
+" Multiple Cursors with Neocomplete
+" Called once right before you start selecting multiple cursors
+function! Multiple_cursors_before()
+  if exists(':NeoCompleteLock')==2
+    exe 'NeoCompleteLock'
+  endif
+endfunction
+
+" Called once only when the multiple selection is canceled (default <Esc>)
+function! Multiple_cursors_after()
+  if exists(':NeoCompleteUnlock')==2
+    exe 'NeoCompleteUnlock'
+  endif
+endfunction

@@ -12,3 +12,12 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-git'
 Plugin 'flowtype/vim-flow'
+
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'djoshea/vim-autoread'
+Plugin 'matze/vim-move'
+Plugin 'posva/vim-vue'
+
+Plugin 'sheerun/vim-polyglot'
+
+Plugin 'mdempsky/gocode', {'rtp': 'vim/'}

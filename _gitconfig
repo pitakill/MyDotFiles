@@ -67,3 +67,5 @@
   selected = normal
   separator = red bold
   linenumber = normal
+[url "git@github.com:"]
+	insteadOf = https://github.com/
