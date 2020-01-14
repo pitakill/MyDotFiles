@@ -1,21 +1,22 @@
 [user]
-	name = Lepoldo Caballero
-	email = git@pitakill.net
+  name = Leopoldo Caballero
+  email = git@pitakill.net
+  signinkey = 997D544E7F956392
 [core]
-	excludesfile = /home/pitakill/.gitignore_global
+  excludesfile = /home/pitakill/.gitignore_global
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	undo = reset HEAD~
-	d = diff
-	dt = difftool
-	ls = diff-tree --no-commit-id --name-only -r
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  undo = reset HEAD~
+  d = diff
+  dt = difftool
+  ls = diff-tree --no-commit-id --name-only -r
 [push]
-	default = simple
+  default = simple
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
 [color]
   pager = true
   ui = auto
@@ -68,4 +69,7 @@
   separator = red bold
   linenumber = normal
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+  insteadOf = https://github.com/
+[commit]
+  gpgsign = true
+  template = ~/.gitmessage

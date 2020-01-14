@@ -1,3 +1,4 @@
+
 set shiftwidth=2                " Use indents of 2 spaces
 set tabstop=2                   " An indentation every four columns
 set softtabstop=2               " Let backspace delete indent
@@ -5,7 +6,12 @@ set foldmethod=indent           " Let fold in the right way
 set foldlevel=5
 let g:bufferline_echo=0
 set autoread
-color nova
+let hour = strftime("%H")
+if 6 <= hour && hour < 20
+    color lightning
+else
+    color nova
+endif
 
 " Buffers
 map <C-right> <ESC>:bn<CR>
@@ -34,18 +40,47 @@ endif
 
 " Golang
 let g:go_fmt_command = "goimports"
+let g:go_auto_type_info = 1
+autocmd FileType go nmap <leader>r <Plug>(go-run)
 
 " Multiple Cursors with Neocomplete
 " Called once right before you start selecting multiple cursors
+"function! Multiple_cursors_before()
+  "if exists(':NeoCompleteLock')==2
+    "exe 'NeoCompleteLock'
+  "endif
+"endfunction
+
+"" Called once only when the multiple selection is canceled (default <Esc>)
+"function! Multiple_cursors_after()
+  "if exists(':NeoCompleteUnlock')==2
+    "exe 'NeoCompleteUnlock'
+  "endif
+"endfunction
+
+" Disable Deoplete when selecting multiple cursors starts
 function! Multiple_cursors_before()
-  if exists(':NeoCompleteLock')==2
-    exe 'NeoCompleteLock'
-  endif
+    if exists('*deoplete#disable')
+        exe 'call deoplete#disable()'
+    elseif exists(':NeoCompleteLock') == 2
+        exe 'NeoCompleteLock'
+    endif
 endfunction
 
-" Called once only when the multiple selection is canceled (default <Esc>)
+" Enable Deoplete when selecting multiple cursors ends
 function! Multiple_cursors_after()
-  if exists(':NeoCompleteUnlock')==2
-    exe 'NeoCompleteUnlock'
-  endif
+    if exists('*deoplete#toggle')
+        exe 'call deoplete#toggle()'
+    elseif exists(':NeoCompleteUnlock') == 2
+        exe 'NeoCompleteUnlock'
+    endif
 endfunction
+
+" Copy to X CLIPBOARD
+map <leader>cc :w !xsel -i -b<CR>
+map <leader>cp :w !xsel -i -p<CR>
+map <leader>cs :w !xsel -i -s<CR>
+" Paste from X CLIPBOARD
+map <leader>pp :r!xsel -p<CR>
+map <leader>ps :r!xsel -s<CR>
+map <leader>pb :r!xsel -b<CR>
