@@ -1,12 +1,10 @@
 Bundle 'digitaltoad/vim-pug'
 Bundle 'wavded/vim-stylus'
-Bundle 'fatih/vim-go'
+Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Bundle 'editorconfig/editorconfig-vim'
-Bundle 'mxw/vim-jsx'
 Bundle "myusuf3/numbers.vim"
 Bundle 'trevordmiller/nova-vim'
 
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'leafgarland/typescript-vim'
@@ -19,5 +17,15 @@ Plugin 'matze/vim-move'
 Plugin 'posva/vim-vue'
 
 Plugin 'sheerun/vim-polyglot'
-
 Plugin 'mdempsky/gocode', {'rtp': 'vim/'}
+
+Plugin 'rhysd/vim-wasm'
+Plugin 'hashivim/vim-hashicorp-tools'
+Plugin 'b4b4r07/vim-hcl'
+
+Plugin 'evanleck/vim-svelte'
+
+Plugin 'elixir-editors/vim-elixir'
+Plugin 'bcicen/vim-vice'
+
+Plugin 'MaxMEllon/vim-jsx-pretty'

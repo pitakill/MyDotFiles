@@ -5,7 +5,13 @@ set foldmethod=indent           " Let fold in the right way
 set foldlevel=5
 let g:bufferline_echo=0
 set autoread
-color nova
+color vice
+"let hour = strftime("%H")
+"if 6 <= hour && hour < 17
+  "color lightning
+"else
+  "color vice
+"endif
 
 " Buffers
 map <C-right> <ESC>:bn<CR>
@@ -34,6 +40,14 @@ endif
 
 " Golang
 let g:go_fmt_command = "goimports"
+let g:go_def_mode = "gopls"
+let g:go_info_mode = "gopls"
+let g:go_auto_type_info = 1
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>i  <Plug>(go-info)
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
+autocmd FileType go nmap <leader>g  <Plug>(go-generate)
+autocmd FileType go nmap <leader>t  <Plug>(go-test)
 
 " Multiple Cursors with Neocomplete
 " Called once right before you start selecting multiple cursors
@@ -49,3 +63,7 @@ function! Multiple_cursors_after()
     exe 'NeoCompleteUnlock'
   endif
 endfunction
+
+set backupcopy=yes
+
+let g:NERDTreeWinPos = "right"
